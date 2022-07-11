@@ -16,6 +16,7 @@
     "build": {
       "executor": "@nrwl/js:tsc",
       "outputs": ["{options.outputPath}"],
+      "dependsOn": ["generate-sources"],
       "options": {
         "outputPath": "dist/libs/api2-lib",
         "main": "libs/api2-lib/src/index.ts",
