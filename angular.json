@@ -2,7 +2,9 @@
   "$schema": "./node_modules/nx/schemas/workspace-schema.json",
   "version": 2,
   "projects": {
+    "api2-lib": "libs/api2-lib",
     "todos": "apps/todos",
-    "todos-e2e": "apps/todos-e2e"
+    "todos-e2e": "apps/todos-e2e",
+    "ui": "libs/ui"
   }
 }

@@ -1,0 +1,28 @@
+{
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/api2-lib/src",
+  "projectType": "library",
+  "targets": {
+    "generate-sources": {
+      "executor": "@trumbitta/nx-plugin-openapi:generate-api-lib-sources",
+      "options": {
+        "useDockerBuild": false,
+        "generator": "typescript-angular",
+        "sourceSpecPathOrUrl": "https://petstore3.swagger.io/api/v3/openapi.json",
+        "additionalProperties": "apiModulePrefix=Petstore,stringEnums=true",
+        "globalProperties": ""
+      }
+    },
+    "build": {
+      "executor": "@nrwl/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/api2-lib",
+        "main": "libs/api2-lib/src/index.ts",
+        "tsConfig": "libs/api2-lib/tsconfig.lib.json",
+        "assets": ["libs/api2-lib/*.md"]
+      }
+    }
+  },
+  "tags": []
+}

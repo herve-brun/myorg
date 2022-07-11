@@ -39,6 +39,8 @@
     "@nrwl/linter": "14.4.2",
     "@nrwl/nx-cloud": "latest",
     "@nrwl/workspace": "14.4.2",
+    "@openapitools/openapi-generator-cli": "2.3.7",
+    "@trumbitta/nx-plugin-openapi": "^1.11.0",
     "@types/jest": "27.4.1",
     "@types/node": "16.11.7",
     "@typescript-eslint/eslint-plugin": "^5.29.0",

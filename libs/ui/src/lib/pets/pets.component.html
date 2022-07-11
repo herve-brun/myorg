@@ -1,0 +1,8 @@
+<ul>
+    <li *ngFor="let pet of pets$ | async">{{pet.name}} : {{pet.status}}</li>
+</ul>
+
+<select (change)="onChangeStatus($event)" [disabled]="loading">
+    <option value=""></option>
+    <option *ngFor="let status of statuses" [value]="status">{{status}}</option>
+</select>
