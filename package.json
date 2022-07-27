@@ -41,7 +41,7 @@
     "@nrwl/jest": "14.4.2",
     "@nrwl/linter": "14.4.2",
     "@nrwl/nx-cloud": "latest",
-    "@nrwl/workspace": "14.4.2",
+    "@nrwl/workspace": "14.4.3",
     "@openapitools/openapi-generator-cli": "2.3.7",
     "@trumbitta/nx-plugin-openapi": "^1.11.0",
     "@types/jest": "27.4.1",
