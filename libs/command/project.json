@@ -18,10 +18,10 @@
       "outputs": ["{options.outputPath}"],
       "dependsOn": ["generate-sources"],
       "options": {
-        "outputPath": "dist/libs/api2-lib",
-        "main": "libs/api2-lib/src/index.ts",
-        "tsConfig": "libs/api2-lib/tsconfig.lib.json",
-        "assets": ["libs/api2-lib/*.md"]
+        "outputPath": "dist/libs/command",
+        "main": "libs/command/src/index.ts",
+        "tsConfig": "libs/command/tsconfig.lib.json",
+        "assets": ["libs/command/*.md"]
       }
     }
   },
