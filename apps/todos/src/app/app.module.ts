@@ -1,7 +1,6 @@
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { PetstoreApiModule } from '@myorg/api2-lib';
 import { UiModule } from '@myorg/ui';
 
 import { AppComponent } from './app.component';

@@ -6,8 +6,7 @@ import { CommonModule } from '@angular/common';
   templateUrl: './pet.component.html',
   styleUrls: ['./pet.component.css'],
 })
-export class PetComponent {
-}
+export class PetComponent {}
 
 @NgModule({
   imports: [CommonModule],
