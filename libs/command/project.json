@@ -1,0 +1,29 @@
+{
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/command/src",
+  "projectType": "library",
+  "targets": {
+    "generate-sources": {
+      "executor": "@trumbitta/nx-plugin-openapi:generate-api-lib-sources",
+      "options": {
+        "useDockerBuild": false,
+        "generator": "typescript-angular",
+        "sourceSpecPathOrUrl": "https://app.swaggerhub.com/apiproxy/registry/herve-brun/StarWars/0.1?resolved=true",
+        "additionalProperties": "apiModulePrefix=VisualStudioOnline,stringEnums=true",
+        "globalProperties": ""
+      }
+    },
+    "build": {
+      "executor": "@nrwl/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "dependsOn": ["generate-sources"],
+      "options": {
+        "outputPath": "dist/libs/api2-lib",
+        "main": "libs/api2-lib/src/index.ts",
+        "tsConfig": "libs/api2-lib/tsconfig.lib.json",
+        "assets": ["libs/api2-lib/*.md"]
+      }
+    }
+  },
+  "tags": []
+}

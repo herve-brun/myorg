@@ -1,6 +1,8 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
     "rootDir": ".",
     "sourceMap": true,
     "declaration": false,
@@ -18,6 +20,7 @@
       "@myorg/api-lib": ["libs/api-lib/src/index.ts"],
       "@myorg/api2-lib": ["libs/api2-lib/src/index.ts"],
       "@myorg/api3-lib": ["libs/api3-lib/src/index.ts"],
+      "@myorg/command": ["libs/command/src/index.ts"],
       "@myorg/ui": ["libs/ui/src/index.ts"]
     }
   },

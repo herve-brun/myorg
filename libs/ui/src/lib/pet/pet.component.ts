@@ -1,4 +1,4 @@
-import { Component, OnInit, NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -6,10 +6,7 @@ import { CommonModule } from '@angular/common';
   templateUrl: './pet.component.html',
   styleUrls: ['./pet.component.css'],
 })
-export class PetComponent implements OnInit {
-  constructor() {}
-
-  ngOnInit(): void {}
+export class PetComponent {
 }
 
 @NgModule({

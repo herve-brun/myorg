@@ -2,6 +2,12 @@
   "projectType": "application",
   "sourceRoot": "apps/todos/src",
   "prefix": "myorg",
+  "i18n": {
+    "locales": {
+      "fr": "src/locale/messages.fr.xlf",
+      "en": "src/locale/messages.en.xlf"
+    }
+  },
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
@@ -38,6 +44,12 @@
           ],
           "outputHashing": "all"
         },
+        "fr": {
+          "localize": ["fr"]
+        },
+        "en": {
+          "localize": ["en"]
+        },
         "development": {
           "buildOptimizer": false,
           "optimization": false,
@@ -57,6 +69,12 @@
         },
         "development": {
           "browserTarget": "todos:build:development"
+        },
+        "fr": {
+          "browserTarget": "todos:build:fr"
+        },
+        "en": {
+          "browserTarget": "todos:build:en"
         }
       },
       "defaultConfiguration": "development"

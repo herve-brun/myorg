@@ -18,9 +18,9 @@ export class PetsComponent implements OnInit, OnDestroy {
   loading = false;
 
   pets$: Observable<Pet[]> = this.petStatusToSearch$.pipe(
-    tap((_status) => (this.loading = true)),
+    tap(() => (this.loading = true)),
     switchMap((status) => iif(() => status != undefined, this.petSvc.findPetsByStatus(status), from([]))),
-    tap((_pets) => (this.loading = false))
+    tap(() => (this.loading = false))
   );
 
   constructor(private petSvc: PetService) { }
@@ -33,7 +33,7 @@ export class PetsComponent implements OnInit, OnDestroy {
     this.petStatusToSearch$.next(PetStatusEnum.Available);
   }
 
-  onChangeStatus(e: any) {
+  onChangeStatus(e: { target: { value: PetStatusEnum; }; }) {
     this.petStatusToSearch$.next(
       Object.values(PetStatusEnum).find(
         (_enumValue, index, arr) => arr[index] == e.target.value
