@@ -94,7 +94,7 @@
     "test": {
       "executor": "@nrwl/jest:jest",
       "outputs": ["coverage/apps/todos"],
-      "dependsOn": [{ "projects": "api2-lib", "target": "generate-sources" }],
+      "dependsOn": [{ "projects": "dependencies", "target": "generate-sources" }],
       "options": {
         "jestConfig": "apps/todos/jest.config.ts",
         "passWithNoTests": true
