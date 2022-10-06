@@ -1,6 +1,6 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { PetStatusEnum, Pet, PetService } from '@myorg/api2-lib';
-import { Subject, Observable, tap, switchMap, iif, from, of } from 'rxjs';
+import { Pet, PetService, PetStatusEnum } from '@myorg/api2-lib';
+import { iif, Observable, of, Subject, switchMap, tap } from 'rxjs';
 
 @Component({
   selector: 'myorg-pets',

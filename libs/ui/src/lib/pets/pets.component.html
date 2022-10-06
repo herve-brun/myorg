@@ -3,7 +3,7 @@
 </ul>
 
 <span i18n>Catégorie blablablah</span>
-<select (change)="onChangeStatus($event)" [disabled]="loading">
+<select (change)="onChangeStatus($event)" [disabled]="loading" title="Filter by status">
   <option value=""></option>
   <option *ngFor="let status of statuses" [value]="status">{{ status }}</option>
 </select>
